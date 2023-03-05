@@ -1,16 +1,8 @@
 <html>
-  <head>
-    <!--변수명이 중복된다-->
-    <script src="./source/hello.js"></script>
-    <script src="./source/world.js"></script>
-  </head>
+  <head> </head>
   <body>
     <h1>Hello, Webpack</h1>
     <div id="root"></div>
-    <script type="module">
-      import hello_word from './source/hello.js';
-      import world_word from './source/world.js';
-      document.querySelector('#root').innerHTML = `${hello_word} ${world_word}`;
-    </script>
+    <script type="module" src="dist/bundle_index.js/main.js"></script>
   </body>
 </html>
